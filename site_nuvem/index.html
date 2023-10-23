@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .titulo {
+            color: black;
+            text-align: center;
+        }
+
+        #logo-left,
+        #logo-right {
+            width: 100px;
+            height: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .objetivo {
+            text-align: justify;
+            line-height: 2;
+        }
+
+        .block {
+            flex: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .block img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #membros {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .card-membros-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card-membro {
+            background-color: #e8e8e8;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+            padding: 15px;
+            margin-bottom: 20px;
+            flex: 0 0 calc(20% - 20px);
+            /* Defina a largura máxima para manter margens entre os cards */
+        }
+
+        .card-membro:hover {
+            transform: scale(1.1);
+        }
+
+        .card-img-top {
+            width: 80%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card-body {
+            padding-top: 5px;
+        }
+
+        .card-title {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+            color: #9B6900;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media queries para ajustar o layout em telas menores */
+        @media (max-width: 768px) {
+            .block {
+                flex: 100%;
+            }
+
+            .card-membro {
+                flex: 0 0 calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img id="logo-left" src="aws.png" alt="Logo Esquerda">
+        <h1 class="titulo">Projeto Website: Divulgação de Currículo</h1>
+        <img id="logo-right" src="escola_nuvem.png" alt="Logo Direita">
+    </header>
+
+    <div class="container">
+        <div class="block objetivo">
+            <h1>OBJETIVO:</h1>
+            <h3>Desenvolvimento de um WebSite (HTML, CSS, Imagens) contendo os currículos do grupo e a implantação de um
+                ou mais serviços na nuvem AWS, com rede de entrega de conteúdo, com baixa latência, com segurança, e
+                armazenamento durável, para atender a demanda de 11 milhões de requisições por mês.</h3>
+        </div>
+        <div class="block">
+            <img src="nuvem.jpg" alt="Imagem">
+        </div>
+    </div>
+
+    <div id="membros">
+        <h1>MEMBROS DO TIME:</h1>
+        <div class="card-membros-container">
+            <div class="card-membro">
+                <img class="card-img-top" src="daniel.jpeg" alt="Daniel Oliveira">
+                <div class="card-body">
+                    <p class="card-title">Daniel Oliveira</p>
+                    <a href="www.google.com" target="_blank"><img width="48" height="48"
+                            src="https://img.icons8.com/color/48/google-drive--v1.png" alt="google-drive--v1" /></a>
+                    <a href="https://www.linkedin.com/in/daniel-oliveira-38105b222" target="_blank"><img width="48"
+                            height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin" /></a>
+                </div>
+            </div>
+            <div class="card-membro">
+                <img class="card-img-top" src="jefferson.jpg" alt="Jefferson Ferreira">
+                <div class="card-body">
+                    <p class="card-title">Jefferson Ferreira</p>
+                    <a href="https://docs.google.com/document/d/1-J7m7Op4uaALP5Rv5XhbuuWixFI7MSyf/edit"
+                        target="_blank"><img width="48" height="48"
+                            src="https://img.icons8.com/color/48/google-drive--v1.png" alt="google-drive--v1" /></a>
+                    <a href="https://www.linkedin.com/in/jefferson-ferreira-desenvolvedor" target="_blank"><img
+                            width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png"
+                            alt="linkedin" /></a>
+                </div>
+            </div>
+            <div class="card-membro">
+                <img class="card-img-top" src="marcelo.jpeg" alt="Marcelo">
+                <div class="card-body">
+                    <p class="card-title">Marcelo</p>
+                    <a href="www.google.com" target="_blank"><img width="48" height="48"
+                            src="https://img.icons8.com/color/48/google-drive--v1.png" alt="google-drive--v1" /></a>
+                    <a href="link-para-linkedin" target="_blank"><img width="48" height="48"
+                            src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin" /></a>
+                </div>
+            </div>
+            <div class="card-membro">
+                <img class="card-img-top" src="vitor.jpeg" alt="Vítor Del' Duca">
+                <div class="card-body">
+                    <p class="card-title">Vítor Del' Duca</p>
+                    <a href="https://docs.google.com/document/d/1TtPkROSAzb86zpDXOSvYoP2TanN7Lt5g/edit?usp=drivesdk&ouid=117654387694075232767&rtpof=true&sd=true"
+                        target="_blank"><img width="48" height="48"
+                            src="https://img.icons8.com/color/48/google-drive--v1.png" alt="google-drive--v1" /></a>
+                    <a href="https://www.linkedin.com/in/vitor-del-duca" target="_blank"><img width="48" height="48"
+                            src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        &copy; Copyright Grupo 2 - C7L1 - AWS 03 - 2023
+    </div>
+
+</body>
+
+</html>
